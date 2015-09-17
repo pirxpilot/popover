@@ -1,5 +1,5 @@
 {
-  "name": "popover-component",
+  "name": "code42day-popover",
   "description": "Popover component",
   "version": "1.1.1",
   "keywords": [
@@ -7,26 +7,23 @@
     "component"
   ],
   "bugs": {
-    "url": "https://github.com/component/popover.git/issues"
+    "url": "https://github.com/code42day/popover.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/component/popover.git"
+    "url": "https://github.com/code42day/popover.git"
   },
   "dependencies": {
-    "component-tip": "*",
+    "code42day-tip": "*",
     "component-query": "*",
-    "component-inherit": "0.0.3"
+    "component-inherit": "~0"
   },
   "browser": {
     "inherit": "component-inherit",
     "query": "component-query",
-    "tip": "component-tip"
+    "tip": "code42day-tip"
   },
-  "component": {
-    "scripts": {
-      "popover/index.js": "index.js",
-      "popover/template.js": "template.js"
-    }
+  "devDependencies": {
+    "stringify": "^3.1.0"
   }
 }
