@@ -1,5 +1,5 @@
 
-build: index.js template.js components
+build: index.js template.html components
 	@component build --dev
 
 build-browserify: $(SRC) node_modules
@@ -8,9 +8,6 @@ build-browserify: $(SRC) node_modules
 		--require query \
 		--require ./index.js:popover \
 		--outfile build/build.js
-
-template.js: template.html
-	@component convert $<
 
 components:
 	@component install  --dev

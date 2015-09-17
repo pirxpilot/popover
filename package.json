@@ -23,6 +23,11 @@
     "query": "component-query",
     "tip": "code42day-tip"
   },
+  "browserify": {
+    "transform": [
+      "stringify"
+    ]
+  },
   "devDependencies": {
     "stringify": "^3.1.0"
   }
