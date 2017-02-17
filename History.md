@@ -1,4 +1,10 @@
 
+1.1.3 / 2017-02-17
+==================
+
+ * change name to @pirxpilot/popover
+ * remove obsolete component build
+
 1.1.2 / 2015-09-17
 ==================
 
