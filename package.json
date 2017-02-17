@@ -1,17 +1,14 @@
 {
-  "name": "code42day-popover",
+  "name": "@pirxpilot/popover",
   "description": "Popover component",
   "version": "1.1.2",
   "keywords": [
     "popover",
     "component"
   ],
-  "bugs": {
-    "url": "https://github.com/code42day/popover.git/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/code42day/popover.git"
+    "url": "https://github.com/pirxpilot/popover.git"
   },
   "dependencies": {
     "code42day-tip": "*",

@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-$ npm install popover-component
+$ npm install @pirxpilot/popover
 ```
 
 ## Features
