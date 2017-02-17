@@ -1,18 +1,15 @@
 
-build: index.js template.html components
-	@component build --dev
-
-build-browserify: $(SRC) node_modules
+build: $(SRC) node_modules
 	@mkdir -p build
 	@browserify \
 		--require query \
 		--require ./index.js:popover \
 		--outfile build/build.js
 
-components:
-	@component install  --dev
+node_modules: package.json
+	npm install
 
 clean:
-	rm -fr build components
+	rm -fr build node_modules
 
 .PHONY: clean build
