@@ -24,7 +24,7 @@ module.exports = Popover;
 function Popover(content, title) {
   Tip.call(this, require('./template.html'));
   this.classname = 'popover';
-  this.classes.add('popover');
+  this.el.classList.add('popover');
   if (title) this.title(title);
   else this.hideTitle();
   this.content(content);
