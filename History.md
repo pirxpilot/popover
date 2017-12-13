@@ -1,4 +1,10 @@
 
+1.1.5 / 2017-12-12
+==================
+
+ * minify HTML template
+ * fix setting element class
+
 1.1.4 / 2017-03-18
 ==================
 
