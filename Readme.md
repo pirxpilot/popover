@@ -1,7 +1,7 @@
 
 # Popover
 
-  Popover component built on top of [Tip](http://github.com/component/tip).
+  Popover component built on top of [Tip](http://github.com/pirxpilot/tip).
 
   ![js popover component](http://f.cl.ly/items/282X271J2Y1s1P342o02/Screen%20Shot%202012-08-02%20at%205.07.07%20PM.png)
 
