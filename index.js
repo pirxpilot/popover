@@ -4,8 +4,6 @@
 
 const Tip = require('@pirxpilot/tip');
 
-const q = require('query');
-
 /**
  * Initialize a `Popover` with the given `content`
  * and optional `title`.
@@ -35,7 +33,7 @@ class Popover extends Tip {
    */
 
   content(content) {
-    const contentEl = q('.popover-content', this.el);
+    const contentEl = this.el.querySelector('.popover-content');
     if (typeof content === 'string')
       contentEl.innerHTML = content;
     else
@@ -52,7 +50,7 @@ class Popover extends Tip {
    */
 
   title(title) {
-    const titleEl = q('.popover-title', this.el);
+    const titleEl = this.el.querySelector('.popover-title');
     if (typeof title === 'string')
       titleEl.innerHTML = title;
     else
@@ -68,8 +66,8 @@ class Popover extends Tip {
    */
 
   hideTitle() {
-    const titleEl = q('.popover-title', this.el);
-    titleEl.parentNode.removeChild(titleEl);
+    const titleEl = this.el.querySelector('.popover-title');
+    titleEl.remove();
     return this;
   }
 }
