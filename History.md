@@ -1,4 +1,11 @@
 
+2.0.0 / 2018-11-28
+==================
+
+ * remove component-query
+ * rewrite in ES6
+ * upgrade @pirxpilot/tip to ~3
+
 1.1.5 / 2017-12-12
 ==================
 
