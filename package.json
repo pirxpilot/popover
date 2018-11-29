@@ -12,13 +12,10 @@
   },
   "dependencies": {
     "@pirxpilot/tip": "~3",
-    "component-inherit": "~0",
     "component-query": "*"
   },
   "browser": {
-    "inherit": "component-inherit",
-    "query": "component-query",
-    "tip": "@pirxpilot/tip"
+    "query": "component-query"
   },
   "browserify": {
     "transform": [
