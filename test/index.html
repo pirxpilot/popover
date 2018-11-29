@@ -4,7 +4,7 @@
     <title>Popover</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="../build/build.css" />
-    <link rel="stylesheet" href="https://rawgit.com/component/aurora-tip/master/aurora-tip.css" />
+    <link rel="stylesheet" href="../build/aurora-tip.css" />
     <style>
       body {
         padding: 60px;
@@ -37,11 +37,10 @@
     <a href="#" id="markup">Markup</a>
     <a href="#" id="auto">Auto</a>
     <script>
-      var q = require('query');
       var Popover = require('popover');
       Popover.effect = 'fade';
 
-      [].slice.call(q.all('#top,#right,#left,#bottom')).forEach(function(el){
+      document.querySelectorAll('#top,#right,#left,#bottom').forEach(function(el){
         var tip = new Popover('Some popover content', el.textContent);
         tip.position(el.textContent.toLowerCase());
         el.addEventListener('mouseenter', function(){
@@ -50,11 +49,11 @@
         el.addEventListener('mouseleave', function(){
           tip.hide(200);
         });
-      })
+      });
 
       var tip = new Popover('<input type="search" placeholder="Search" />', 'Search');
       tip.position('top');
-      var markup = q('#markup');
+      var markup = document.querySelector('#markup');
       markup.addEventListener('mouseenter', function(){
         tip.show(markup);
       });

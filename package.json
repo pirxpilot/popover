@@ -11,14 +11,7 @@
     "url": "https://github.com/pirxpilot/popover.git"
   },
   "dependencies": {
-    "@pirxpilot/tip": "^2.5.3",
-    "component-inherit": "~0",
-    "component-query": "*"
-  },
-  "browser": {
-    "inherit": "component-inherit",
-    "query": "component-query",
-    "tip": "@pirxpilot/tip"
+    "@pirxpilot/tip": "~3"
   },
   "browserify": {
     "transform": [
