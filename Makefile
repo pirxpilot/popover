@@ -6,7 +6,7 @@ compile: build/build.js build/build.css build/aurora-tip.css
 build:
 	mkdir -p $@
 
-build/build.js: index.js template.html | build node_modules
+build/build.js: index.js | build node_modules
 	browserify \
 		--debug \
 		--require ./index.js:$(PROJECT) \
@@ -17,7 +17,7 @@ build/build.css: $(CSS) | build
 
 build/aurora-tip.css: | build
 	curl \
-		--compress \
+		--compressed \
 		--output $@ \
 		https://raw.githubusercontent.com/component/aurora-tip/master/aurora-tip.css
 

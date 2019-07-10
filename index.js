@@ -13,9 +13,16 @@ const Tip = require('@pirxpilot/tip');
  * @api public
  */
 
+const template = `
+<div class="popover-wrapper">
+  <span class="popover-title"></span>
+  <div class="popover-content"></div>
+</div>
+`;
+
 class Popover extends Tip {
   constructor(content, title) {
-    super(require('./template.html'));
+    super(template);
     this.classname = 'popover';
     this.el.classList.add('popover');
     if (title) this.title(title);
