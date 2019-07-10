@@ -6,23 +6,9 @@
     "popover",
     "component"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pirxpilot/popover.git"
-  },
+  "repository": "pirxpilot/popover",
   "dependencies": {
     "@pirxpilot/tip": "~3"
-  },
-  "browserify": {
-    "transform": [
-      "stringify"
-    ]
-  },
-  "stringify": {
-    "minify": true
-  },
-  "devDependencies": {
-    "stringify": "~5"
   },
   "license": "MIT",
   "files": [
