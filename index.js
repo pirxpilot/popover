@@ -1,8 +1,4 @@
-/**
- * Module dependencies.
- */
-
-const Tip = require('@pirxpilot/tip');
+import Tip from '@pirxpilot/tip';
 
 /**
  * Initialize a `Popover` with the given `content`
@@ -20,7 +16,7 @@ const template = `
 </div>
 `;
 
-class Popover extends Tip {
+export default class Popover extends Tip {
   constructor(content, title) {
     super(template);
     this.classname = 'popover';
@@ -74,9 +70,3 @@ class Popover extends Tip {
     return this;
   }
 }
-
-/**
- * Expose `Popover`.
- */
-
-module.exports = Popover;
