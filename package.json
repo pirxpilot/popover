@@ -6,12 +6,20 @@
     "popover",
     "component"
   ],
-  "repository": "pirxpilot/popover",
+  "type": "module",
+  "exports": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/popover.git"
+  },
   "dependencies": {
-    "@pirxpilot/tip": "~3"
+    "@pirxpilot/tip": "~4"
   },
   "license": "MIT",
   "files": [
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
 }
