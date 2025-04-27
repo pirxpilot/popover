@@ -41,10 +41,8 @@ class Popover extends Tip {
 
   content(content) {
     const contentEl = this.el.querySelector('.popover-content');
-    if (typeof content === 'string')
-      contentEl.innerHTML = content;
-    else
-      contentEl.appendChild(content);
+    if (typeof content === 'string') contentEl.innerHTML = content;
+    else contentEl.appendChild(content);
     return this;
   }
 
@@ -58,10 +56,8 @@ class Popover extends Tip {
 
   title(title) {
     const titleEl = this.el.querySelector('.popover-title');
-    if (typeof title === 'string')
-      titleEl.innerHTML = title;
-    else
-      titleEl.appendChild(title);
+    if (typeof title === 'string') titleEl.innerHTML = title;
+    else titleEl.appendChild(title);
     return this;
   }
 
