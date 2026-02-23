@@ -23,10 +23,6 @@ build/aurora-tip.css: | build
 		--output $@ \
 		https://raw.githubusercontent.com/component/aurora-tip/master/aurora-tip.css
 
-node_modules: package.json
-	yarn
-	touch $@
-
 clean:
 	rm -fr build node_modules
 

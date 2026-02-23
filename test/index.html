@@ -1,14 +1,14 @@
 <!DOCTYPE 5>
-<html>
+<html lang="en">
   <head>
     <title>Popover</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="../build/build.css" />
     <link rel="stylesheet" href="../build/aurora-tip.css" />
     <style>
       body {
         padding: 60px;
-        font: 300 14px "Helvetica Neue", Helvetica, Arial;
+        font: 300 14px sans-serif;
         min-height: 1000px;
       }
       a {
@@ -37,16 +37,16 @@
     <a href="#" id="markup">Markup</a>
     <a href="#" id="auto">Auto</a>
     <script>
-      var Popover = popover.default;;
+      var Popover = popover.default;
       Popover.effect = 'fade';
 
-      document.querySelectorAll('#top,#right,#left,#bottom').forEach(function(el){
+      document.querySelectorAll('#top,#right,#left,#bottom').forEach(el => {
         var tip = new Popover('Some popover content', el.textContent);
         tip.position(el.textContent.toLowerCase());
-        el.addEventListener('mouseenter', function(){
+        el.addEventListener('mouseenter', () => {
           tip.show(el);
         });
-        el.addEventListener('mouseleave', function(){
+        el.addEventListener('mouseleave', () => {
           tip.hide(200);
         });
       });
@@ -54,10 +54,10 @@
       var tip = new Popover('<input type="search" placeholder="Search" />', 'Search');
       tip.position('top');
       var markup = document.querySelector('#markup');
-      markup.addEventListener('mouseenter', function(){
+      markup.addEventListener('mouseenter', () => {
         tip.show(markup);
       });
-      markup.addEventListener('mouseleave', function(){
+      markup.addEventListener('mouseleave', () => {
         tip.hide(200);
       });
 
